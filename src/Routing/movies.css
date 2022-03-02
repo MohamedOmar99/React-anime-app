@@ -1,0 +1,12 @@
+.search__solver {
+  left: 25%;
+  top: 15rem;
+  position: absolute;
+  width: 50%;
+}
+@media screen and (max-width: 650px) {
+  .search__solver {
+    left: 0;
+    width: 100%;
+  }
+}

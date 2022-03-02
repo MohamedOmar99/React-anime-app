@@ -1,0 +1,30 @@
+.navbar__search {
+  width: 100%;
+  margin: 0 0 4rem 0;
+}
+.navbar__search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.navbar__search-container input {
+  width: 100%;
+  padding: 2rem;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  background: var(--color-gray);
+  border-radius: 1rem;
+}
+.search__button {
+  position: absolute;
+  right: 4rem;
+  cursor: pointer;
+  color: var(--color-dark-gray);
+  font-size: 2rem;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}

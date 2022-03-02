@@ -1,0 +1,9 @@
+.parts {
+  background: var(--color-dark-gray) url(../../assets/nar.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  background-blend-mode: multiply;
+  width: 100%;
+}

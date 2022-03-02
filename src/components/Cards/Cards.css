@@ -1,0 +1,117 @@
+.card {
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.card__container-content {
+  width: 230px;
+  margin: 0 3rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  height: 35rem;
+  transition: 0.3s;
+}
+.card__container-content::after {
+  transition: 0.3s;
+  width: 0;
+  position: absolute;
+  content: "";
+  height: 0;
+  top: 0;
+  left: 0;
+}
+.card__container-content:hover::after {
+  background: var(--color-dark-gray);
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+}
+.card__container-content img {
+  width: 100%;
+}
+.card__info {
+  position: absolute;
+  bottom: 0rem;
+  color: var(--color-gray);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 30%;
+}
+.card__info a {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  transition: 0.3s;
+}
+.card__info a:hover {
+  color: var(--color-yellow);
+}
+
+.card__info h4,
+.card__info h5 {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+  .card__container-content {
+    width: 18rem;
+    height: 25rem;
+  }
+  .card__info {
+    height: 30%;
+  }
+  .card__info a {
+    font-size: 1.8rem;
+  }
+  .card__info h4,
+  .card__info h5 {
+    font-size: 1.4rem;
+  }
+  .card:nth-child(odd) {
+    margin-right: -4rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .card__container-content {
+    width: 15rem;
+    height: 22rem;
+  }
+  .card:nth-child(odd) {
+    margin-right: -5rem;
+  }
+  .card__info a {
+    font-size: 1.2rem;
+  }
+  .card__info h4,
+  .card__info h5 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .card__container-content {
+    width: 14rem;
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card__container-content {
+    width: 18rem;
+    height: 24rem;
+  }
+  .card:nth-child(odd) {
+    margin-right: 0;
+  }
+}
